@@ -6,7 +6,7 @@ https://leopoldogurgel.github.io/learnantinoportfolio/
 
 This is a project of a Portfolio landing page where every good coding practice I have learned so far has been applied to. Happy to see the results of a lot of hard work. 
 
-![Alt text](./docs/assets/images/screenshot.jpg "Page screenshot")
+![Alt text](./assets/images/screenshot.jpg "Page screenshot")
 
 ## RESOURCES
 
