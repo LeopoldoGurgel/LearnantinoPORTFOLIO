@@ -1,6 +1,6 @@
 # Learnantino - A sample of what I can build with my skills.
 
-https://leopoldogurgel.github.io/learnantinoportfolio/
+(https://leopoldogurgel.github.io/LearnantinoPORTFOLIO/)
 
 ## DESCRIPTION
 
@@ -18,7 +18,7 @@ By clicking on the links at the navigation bar at the top of the page, you will 
 
 ## CREDITS
 
-All images used, except for my picture, are sctock images free to use and were downloaded from unsplash.com.
+All images used, except for my picture, are sctock images free to use and were downloaded from (unsplash.com).
 
 - Moon image was taken by Carol Romão.
 - Waves image was taken by Jeremy Bishop.
@@ -27,7 +27,7 @@ All images used, except for my picture, are sctock images free to use and were d
 - Pastel shades image was taken by Pawel Czerwinski.
 - Running person image was taken by Sporlab.
 
-Finally, my picture was a selfie and was edited on canva.com.
+Finally, my picture was a selfie and was edited on (canva.com).
 
 ## LICENSE
 
