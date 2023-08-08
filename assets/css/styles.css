@@ -1,0 +1,263 @@
+:root {
+    --lead-color: #555555;
+}
+
+* {
+
+}
+
+body {
+    color: var(--lead-color)
+}
+
+
+/* Header styling starts here */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+    background-color: var(--lead-color);
+    border-radius: 8%;
+    padding: 12px 5px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/carol-romao-DegObwTk7BQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.banner h2 {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+/* main section styling */
+
+
+main {
+    margin: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+aside {
+    width: 19%;
+    border-right: 5px solid var(--lead-color);
+    box-sizing: border-box;
+    text-align: right;
+}
+
+aside h3 {
+    margin: 15px;
+    font-size: 30px;
+}
+
+
+/* about me section styling */
+
+#about article {
+    display:inline;
+}
+
+.mypicture {
+    height: 70px;
+    width: 70px;
+    margin: 5px 20px;
+    float: left;
+}
+
+.intro {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.3em;
+    }
+
+
+/* Styling of the work boxes  */
+
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 79%;
+    margin: 10px;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    color: white;
+    background-color: var(--lead-color);
+    position: absolute;
+    bottom: 50px;
+    height: 80px;
+    font-size: small;
+    padding: 10px;
+}
+
+figcaption span {
+    font-size: 20px;
+    display: block;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+figure img {
+    width:100%;
+    height: 250px;
+    overflow: hidden;
+    display: block; /* Hides an annoying blank space before the bottom-border; */
+}
+
+figure::before { /* This will create a cool glowing effect when we hover over working boxes */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0; /* It has to be insivible at first. We will set it to apper later on hover pseudoclass */
+    transition: opacity 0.3s ease; /* cool transition effect */
+}
+
+figure:hover::before {
+    opacity: 1;
+}
+
+article div {
+    border: 5px solid var(--lead-color);
+    margin: 10px;
+}
+
+.larger {
+    width: 100%;
+}
+
+.smaller {
+    width: 47%;
+}
+
+
+/* contact me styling  */
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact a {
+    text-decoration: none;
+    color: inherit;
+    cursor:pointer;
+}
+
+
+/* footer styling */
+
+hr {
+    height: 3px;
+    border: solid 1px var(--lead-color);
+    background-color: var(--lead-color);
+    width: 80%;
+    margin: 15px auto;
+}
+
+footer {
+    text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+    .smaller {
+        width: 45%;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: space-evenly;
+        font-size: 12px;
+    }
+    
+    .smaller {
+        width: 100%;
+    }
+
+    main {
+        margin: 20px;
+    }
+    
+    section {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #work article {
+        margin: 0 auto;
+    }
+    
+    aside {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    
+    aside h3 {
+        font-size: 20px;
+    }
+}
