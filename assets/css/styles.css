@@ -1,10 +1,11 @@
+/* this sets the main color theme for fonts and details in the page */
+
 :root {
     --lead-color: #555555;
 }
 
-* {
 
-}
+/* Here I set the previously defined variable as the main font color of the page */
 
 body {
     color: var(--lead-color)
@@ -13,6 +14,10 @@ body {
 
 /* Header styling starts here */
 
+
+/* defining header as a flex box allows me to manipulate the cild elements within it 
+and space-between will make the two child elements to be separated and each will be 
+located in opposite sites of the page.*/
 
 header {
     display: flex;
@@ -24,16 +29,27 @@ h1 {
     font-size: 40px;
 }
 
+/* Same applies to nav bar when i make it a flex box. 
+Setting justify content to flex end will throw its
+list items to the right edge of the page and the right
+would leave a space between the element itself and 
+the edge pf the page. */
+
 nav {
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
 }
 
+/* This features take out the default anchor styling */
+
 li a {
     color: inherit;
     text-decoration: none;
 }
+
+/* Hovering effects for the anchors with a background color 
+and font color change when hovered. */
 
 li a:hover {
     color: white;
@@ -48,6 +64,9 @@ ul {
     gap: 10px;
     align-items: center;
 }
+
+/* 
+moon image banner styling */
 
 .banner {
     width: 100%;
@@ -106,6 +125,9 @@ aside h3 {
     float: left;
 }
 
+/* text-align justify creates a cool feature
+that makes text embrace elements around it. */
+
 .intro {
     text-align: justify;
     font-size: 20px;
@@ -124,16 +146,35 @@ article {
     margin: 10px;
 }
 
+/* overflow hidden here will make the images
+obbey the figure limits no matter what size
+they are. The excess will be hidden. The position
+set to relative will allowme to position the
+figcaption in it, which is a absolute position
+element. Align-items and justify-content will 
+center the images inside it.*/
+
 figure {
     position: relative;
+    width: 100%;
+    height: 250px;
     overflow: hidden;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+/* As said, this is an absolute position element. 
+Top and left properties will position the element 
+where I want them to be. */
 
 figcaption {
     color: white;
     background-color: var(--lead-color);
     position: absolute;
     bottom: 50px;
+    left:0;
     height: 80px;
     font-size: small;
     padding: 10px;
@@ -148,12 +189,56 @@ figcaption span {
 
 figure img {
     width:100%;
+    height: auto;
+    object-fit: cover;
+    left: auto;
+    top: auto;
     display: block; /* Hides an annoying blank space before the bottom-border; */
 }
+
+/* As the background color is white, 
+making the image partially transparent
+when hovering it will create a glowing effect */
 
 figure img:hover {
     opacity: 0.5;
 }
+
+/* This will prevent the image to go smaller than
+parent element in width or height in smaller screens */
+
+.larger figure img {
+    min-width: 600px;
+}
+
+.smaller figure img {
+    min-width: 400px;
+}
+
+
+/* This block of code below was just me
+trying to create that glowing effect. 
+But this solution would make the image to 
+be hidden behind this new pseudo element. 
+So it would be unreachable to click and access
+the anchor element attached to it. */
+
+/* figure::before { 
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+figure:hover::before {
+    opacity: 1;
+} */
 
 article div {
     border: 5px solid var(--lead-color);
@@ -179,7 +264,7 @@ article div {
 .contact a {
     text-decoration: none;
     color: inherit;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
@@ -197,6 +282,9 @@ footer {
     text-align: center;
 }
 
+
+/* Finally the media queries for 
+responsivity in tablets and phones. */
 
 @media (max-width: 1000px) {
     .smaller {
