@@ -189,10 +189,6 @@ figcaption span {
 
 figure img {
     width:100%;
-    height: auto;
-    object-fit: cover;
-    left: auto;
-    top: auto;
     display: block; /* Hides an annoying blank space before the bottom-border; */
 }
 
