@@ -1,6 +1,6 @@
-# Learnantino - A sample of what I can build with my skills.
+# My Easy PRO-tfolio - A sample of what I can build with my skills.
 
-[https://leopoldogurgel.github.io/LearnantinoPORTFOLIO](https://leopoldogurgel.github.io/MyEasyPro-tfolio/)
+[Take a look at the website!](https://leopoldogurgel.github.io/MyEasyPro-tfolio/)
 
 ## DESCRIPTION
 
